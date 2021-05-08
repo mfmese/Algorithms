@@ -112,7 +112,6 @@ namespace Algorithms
             throw new Exception("Min could not be bigger than Max!");
         }
 
-        //input = int[] { 10, 45, 232, 4, 565, 22, 234, 34 } olsun, burada ilk olarak 
         public static void QuickSortRecursive(int[] input, int left, int right)
         {
             if(left < right)

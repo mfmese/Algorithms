@@ -8,7 +8,6 @@ namespace Algorithms
     {
         public static string RemoveDuplicateChars(string input)
         {
-            StringBuilder response = new StringBuilder();
             StringBuilder storeEncounteredLettes = new StringBuilder();
 
             foreach (char chr in input)
@@ -16,11 +15,10 @@ namespace Algorithms
                 if(storeEncounteredLettes.ToString().IndexOf(chr) == -1)
                 {
                     storeEncounteredLettes.Append(chr);
-                    response.Append(chr);
                 }
             }
             
-            return response.ToString();
+            return storeEncounteredLettes.ToString();
         }
 
         public static bool IsAnagrams(string input1, string input2)
