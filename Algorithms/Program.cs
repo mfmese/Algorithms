@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Text;
 
 namespace Algorithms
 {
@@ -6,7 +11,9 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Started");           
+
+            Console.ReadLine();
         }
     }
 }
